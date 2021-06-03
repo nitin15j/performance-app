@@ -1,0 +1,16 @@
+  <mat-card class="container" *ngIf="details != undefined">
+    <img mat-card-image [src]="details.picture" class="img">
+    <div class="desciption">
+      <mat-card-title>{{details.title}} {{details.firstName}} {{details.lastName}}</mat-card-title>
+      <pre>Gender :{{details.gender}}</pre>
+      
+      <pre>DOB: {{details.dateOfBirth|date}}</pre>
+      <pre>Register Date: {{details.dateOfBirth|date}}</pre>
+
+      <pre>Email: {{details.email}}</pre>
+      <pre>Phone: {{details.phone}}</pre>
+      
+      <mat-card-title>Address</mat-card-title>
+      <pre>{{details.location.country}}, {{details.location.state}}, {{details.location.street}}</pre>
+    </div>
+  </mat-card>

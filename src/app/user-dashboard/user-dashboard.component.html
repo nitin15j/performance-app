@@ -1,0 +1,11 @@
+<div class="container" >
+
+  <div class="item">
+    <app-search (search)="searchUserByName($event)" ></app-search>
+    <app-user-list [data]="data" (userSelectEvent)="loadUserById($event)" ></app-user-list>
+  </div>
+  
+  <app-details [details]="details"></app-details>
+  
+</div>
+
